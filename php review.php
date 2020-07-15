@@ -17,3 +17,11 @@
 line comment
 */
 
+<?php 
+	echo "Hello, World!"; //prints Hello, World!
+
+//escape characters
+<?php
+  echo "1. Teach PHP" ;
+  echo "\n2. Code in PHP";
+  echo "\n3. Learn to have \"fun\".";
