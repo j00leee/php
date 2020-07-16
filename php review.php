@@ -53,7 +53,7 @@ line comment
 
 	echo "The world's most beloved $noun was very $adjective and loved to $verb every single day."
 //fix the code below
-//echo "\nI have always been obsessed with $nouns. I'm $adjectiveish. I'm always &verbing"
+//echo "\nI have always been obsessed with $nouns. I'm $adjectiveish. I'm always $verbing"
 echo "\nI have always been obsessed with ${noun}s. I'm ${adjective}ish. I'm always ${verb}ing."
 
 //variable reassignment 
@@ -65,4 +65,21 @@ echo "\nI have always been obsessed with ${noun}s. I'm ${adjective}ish. I'm alwa
 	$movie = "21";
 	echo "\nBut now my favorite is $movie.";
 	echo "\nI would watch $old_favorite again someday though.";
+
+//another way to concatenate 
+<?php 
+	echo "I'm going on a picnic!";
+	$sentence = "\nI'm going on a picnic, and I'm taking apples";
+	echo $sentence;
+	$sentence .= ", bananas";
+	echo $sentence;
+	$sentence .= ", carrots";
+	echo $sentence; 
+
+//assign by reference 
+<?php
+	$very_bad_unclear_name = "15 chicken wings";
+	$order =& $very_bad_unclear_name;
+	$order .= ", 1 biscuit";
+	echo "\nYour order is: $very_bad_unclear_name.";
 
