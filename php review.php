@@ -22,6 +22,47 @@ line comment
 
 //escape characters
 <?php
-  echo "1. Teach PHP" ;
-  echo "\n2. Code in PHP";
-  echo "\n3. Learn to have \"fun\".";
+	echo "1. Teach PHP" ;
+  	echo "\n2. Code in PHP";
+  	echo "\n3. Learn to have \"fun\".";
+
+  //string concatenation
+<?php
+	echo "Code" . "cademy"; 
+  	echo "\nMy name is:" . " " . "Julie";
+  	echo "\n" . "tur" . "duck" . "en";
+
+ //variables
+<?php
+	$favoriteMovie = "Good Will Hunting";
+	$biography = "\n I am a recent college graduate seeking a web development job.";
+	$favorite_food = "\n" . "tur" . "duck" . "en";
+
+//using variables
+<?php
+	$name = "Julie";
+	$language = "php";
+	echo "I am " . $name . ".";
+	echo "\n" . $language;
+
+//variable parsing 
+<?php 
+	$noun = "bubble tea";
+	$adjective = "good";
+	$verb = "exist";
+
+	echo "The world's most beloved $noun was very $adjective and loved to $verb every single day."
+//fix the code below
+//echo "\nI have always been obsessed with $nouns. I'm $adjectiveish. I'm always &verbing"
+echo "\nI have always been obsessed with ${noun}s. I'm ${adjective}ish. I'm always ${verb}ing."
+
+//variable reassignment 
+<?php
+	$movie = "toy story";
+	$old_favorite = $movie;
+
+	echo "I'm a fickle person, my favorite movie used to be $movie.";
+	$movie = "21";
+	echo "\nBut now my favorite is $movie.";
+	echo "\nI would watch $old_favorite again someday though.";
+
